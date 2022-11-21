@@ -5,7 +5,7 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 const Hero = () => {
   const { title, subtitle, btnText, compText } = hero;
   return (
-    <section className=" max-h-[800px] py-6 me bg-gradient-to-r from-rose-100 to-violet-200" >
+    <section className="items-center flex max-h-[800px] py-6 me bg-gradient-to-r from-rose-100 to-violet-200" >
       <div
         className="container mx-auto min-h-[800px]
       flex justify-center items-center"
@@ -17,14 +17,14 @@ const Hero = () => {
         >
           <div className="flex-1 ">
             <h1
-              className="title mb-2 lg:mb-5"
+              className="title mb-2 lg:mb-5 text-center"
               data-aos="fade-in"
               data-aos-delay="500"
             >
               {title}
             </h1>
             <p
-              className="lead mb-5 lg:mb-10"
+              className="lead mb-5 lg:mb-10 text-center"
               data-aos="fade-in"
               data-aos-delay="500"
             >

@@ -4,6 +4,8 @@ import { HiMenuAlt4} from "react-icons/hi";
 import {MdClose} from "react-icons/md"
 // import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);

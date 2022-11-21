@@ -11,8 +11,9 @@ export const nav = [
   ];
 
   export const hero = {
-    title: 'Tired of getting scammed? shop with us your funds are secure ',
+    title: 'Tired of getting scammed?',
     subtitle: 'Helps you to organize your income and expenses',
+    subtitles: '',
     btnText: 'Try free demo',
     compText: '— Web, iOS and Android',
     // image: HeroImg,
