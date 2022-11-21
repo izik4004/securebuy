@@ -16,7 +16,7 @@
   }
   .title,
   .section-title {
-    @apply text-6xl lg:text-8xl mb-6 font-bold;
+    @apply text-4xl lg:text-8xl mb-6 font-bold;
   }
   .logotext {
    @apply text-4xl
@@ -28,7 +28,7 @@
     @apply text-lg lg:text-[22px] text-light mb-4 lg:mb-6 uppercase font-normal;
   }
   .lead {
-    @apply text-2xl text-light font-normal mb-6;
+    @apply text-5xl font-bold;
   }
   .link {
     @apply text-lg text-dark;

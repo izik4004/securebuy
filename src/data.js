@@ -30,17 +30,65 @@ export const nav = [
         delay: 200,
       },
       {
-        // icon: CardIconImg2,
-        title: 'Cloud server',
-        subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
-        delay: 400,
+        // icon: CardIconImg1,
+        title: 'Gaming',
+        btnText: 'Explore',
+        delay: 200,
       },
       {
-        // icon: CardIconImg3,
-        title: 'Pure Javascript',
-        subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
-        delay: 600,
+        // icon: CardIconImg1,
+        title: 'Health',
+        btnText: 'Explore',
+        delay: 200,
       },
+      {
+        // icon: CardIconImg1,
+        title: 'Phone & Laptops',
+        btnText: 'Explore',
+        delay: 200,
+      },
+      // {
+      //   // icon: CardIconImg1,
+      //   title: 'Fashion',
+      //   btnText: 'Explore',
+      //   delay: 200,
+      // },
+      // {
+      //   // icon: CardIconImg1,
+      //   title: 'Electronics',
+      //   btnText: 'Explore',
+      //   delay: 200,
+      // },
+    ],
+    items: [
+      {
+        title: 'Fashion',
+        href: '/'
+      },
+      {
+        title: 'Electronics',
+        href: '/'
+      },
+      {
+        title: 'Home & Office',
+        href: '/'
+      },
+      {
+        title: 'Phones & Laptop',
+        href: '/'
+      },
+      {
+        title: 'Gaming',
+        href: '/'
+      },
+      {
+        title: 'Health & Beauty',
+        href: '/'
+      },
+      // {
+      //   title: 'Other categories',
+      //   href: '/'
+      // },
     ],
   };
 
