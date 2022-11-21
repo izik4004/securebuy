@@ -11,7 +11,7 @@ export const nav = [
   ];
 
   export const hero = {
-    title: 'Track your Expenses to Save Money',
+    title: 'Tired of getting scammed? shop with us your funds are secure ',
     subtitle: 'Helps you to organize your income and expenses',
     btnText: 'Try free demo',
     compText: '— Web, iOS and Android',
@@ -19,14 +19,14 @@ export const nav = [
   };
 
   export const product = {
-    title: 'The Product we work with.',
+    title: 'Explore by Category',
     subtitle:
       'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.',
     cards: [
       {
         // icon: CardIconImg1,
-        title: 'Cross platform',
-        subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+        title: 'Bedroom',
+        btnText: 'Explore',
         delay: 200,
       },
       {
@@ -43,3 +43,5 @@ export const nav = [
       },
     ],
   };
+
+  

@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { product } from '../data';
-import ArrowImg from "../assets/img/product/cards/arrow.svg"
+import ArrowImg from '../assets/svg/arrow.svg'
 
 const Cards = () => {
   const [index, setIndex] = useState()
@@ -19,7 +19,7 @@ const Cards = () => {
               className={`${index === cardIndex &&
               'bg-white shadow-2xl'} w-[350px] h-[350px] flex flex-col
               justify-center items-center mx-auto p-[65px] text-center rounded-[12px]
-              cursor-pointer transition-all`}>
+              cursor-pointer transition-all border-2 border-red-500`}>
                 <div>
                   <img src={card.icon} alt="" />
                 </div>

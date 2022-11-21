@@ -28,8 +28,9 @@ const Header = () => {
         <a href="#"
         data-aos='fade-down'
         data-aos-delay='1200'
+        className="flex"
         >
-          mee
+          <h1 className="logotext  text-[#0F27BD]">Secure<span className="logotext text-accent">Buy</span></h1>
           {/* <img src={logo} alt="" /> */}
         </a>
         <div className="hidden lg:flex"

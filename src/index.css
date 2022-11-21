@@ -18,6 +18,9 @@
   .section-title {
     @apply text-6xl lg:text-8xl mb-6 font-bold;
   }
+  .logotext {
+   @apply text-4xl
+  }
   .h2 {
     @apply text-5xl lg:text-7xl font-bold;
   }
@@ -57,4 +60,9 @@
   .btn-link {
     @apply text-accent text-xl lg:text-2xl;
   }
+}
+
+.me {
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
 }
