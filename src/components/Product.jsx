@@ -42,24 +42,20 @@ const Product = () => {
             <div className="flex  flex-wrap">
               {cards.map((card, cardIndex) => {
                 return (
-                  <div class="lg:w-1/2 p-2 ">
-                    <div class="relative ">
+                  <div class="lg:w-1/2 p-2">
+                    <div class="relative">
                       <img
                         alt="gallery"
                         class="absolute rounded-lg inset-0 w-full h-full object-cover object-center"
                         src="https://dummyimage.com/603x363"
                       />
-                      <div class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 class="tracking-widest lead text-sm title-font font-medium text-indigo-500 mb-1">
+                      <div class="cursor-pointer px-8 py-10 flex flex-col items-center relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                        <h2 class="tracking-widest lead title-font font-medium text-indigo-500 mb-1">
                           {card.title}
                         </h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                          The 400 Blows
-                        </h1>
-                        <p class="leading-relaxed">
-                          Photo booth fam kinfolk cold-pressed sriracha leggings
-                          jianbing microdosing tousled waistcoat.
-                        </p>
+                       
+                        {/* <button className="px-6 py-4 rounded-md bg-accent text-white text-sm">BUY NOW</button> */}
+                        
                       </div>
                     </div>
                   </div>

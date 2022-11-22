@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { hero } from "../data";
 import { HiOutlineChevronDown } from "react-icons/hi";
-import SellForm from "./SellForm";
+// import SellForm from "./SellForm";
 
 const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const { title, subtitle, btnText, compText } = hero;
+  const { title, subtitle, btnText, compText, image } = hero;
   return (
     <>
-      <SellForm modalOpen={modalOpen} setModalOpen={setModalOpen} />
+     
       <div
         aria-hidden="true"
         class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
@@ -19,7 +19,7 @@ const Hero = () => {
 
       <section className="items-center flex max-h-[800px] py-6 me ">
         <div
-          className="container mx-auto min-h-[700px]
+          className="container mx-auto min-h-[800px] w-2/3
       flex justify-center items-center"
         >
           <div
@@ -60,9 +60,9 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="flex-1" data-aos="fade-down" data-aos-delay="800">
+            <div className="flex-1 w-1/3" data-aos="fade-down" data-aos-delay="800">
             <img src={image} alt=""/>
-          </div> */}
+          </div>
           </div>
         </div>
       </section>

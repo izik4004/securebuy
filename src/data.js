@@ -1,3 +1,5 @@
+import HeroImg from "../src/assets/svg/image.svg"
+
 export const header = {
     // logo: LogoImg,
     btnText: 'Connect',
@@ -14,9 +16,9 @@ export const nav = [
     title: 'Tired of getting scammed?',
     subtitle: 'Helps you to organize your income and expenses',
     subtitles: '',
-    btnText: 'Try free demo',
+    btnText: 'Shop Now',
     compText: '— Web, iOS and Android',
-    // image: HeroImg,
+    image: HeroImg,
   };
 
   export const product = {
