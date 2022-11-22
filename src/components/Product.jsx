@@ -6,21 +6,21 @@ import {BsArrowRight} from "react-icons/bs"
 const Product = () => {
   const { title, subtitle, cards, items } = product;
   return (
-    <section className="section">
+    <section className="section -mt-40">
       <div className="container mx-auto">
-        <h3 className="lead text-center mb-20">{title}</h3>
+        <h3 className="lead text-center mb-10">{title}</h3>
         <div className="gap-10 flex">
           <div className="lg:w-1/3">
             <input type="text" placeholder="Search" 
-            className="py-4 px-10 my-4 border-2 bg-primary rounded-md text-black"/>
+            className="py-4 px-10 my-4 border border-accent rounded-md text-black"/>
             <div className="flex flex-col">
-              <ul >
+              <ul className=" overflow-auto font-semibold">
                 {items.map((item, index) => (
                   <li key={index}
-                  className="cursor-pointer py-4 px-10 my-4 border-2 bg-primary rounded-md text-black"
+                  className="cursor-pointer py-4 px-10 my-4  hover:bg-accent hover:text-white rounded-md text-black"
                   >
                     <a
-                      className="hover:text-accent transition"
+                      // className="hover:text-accent transition"
                       href={item.href}
                     >
                       {item.title}

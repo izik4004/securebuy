@@ -1,13 +1,13 @@
 export const header = {
     // logo: LogoImg,
-    btnText: 'Request a demo',
+    btnText: 'Connect',
   };
 
 export const nav = [
-    { name: 'Features', href: '/' },
-    { name: 'About us', href: '/' },
-    { name: 'Pricing', href: '/' },
-    { name: 'Feedback', href: '/' },
+    { name: 'Home', href: '/' },
+    { name: 'Products', href: '/' },
+    { name: 'About', href: '/' },
+    // { name: 'Feedback', href: '/' },
   ];
 
   export const hero = {
@@ -78,14 +78,14 @@ export const nav = [
         title: 'Phones & Laptop',
         href: '/'
       },
-      {
-        title: 'Gaming',
-        href: '/'
-      },
-      {
-        title: 'Health & Beauty',
-        href: '/'
-      },
+      // {
+      //   title: 'Gaming',
+      //   href: '/'
+      // },
+      // {
+      //   title: 'Health & Beauty',
+      //   href: '/'
+      // },
       // {
       //   title: 'Other categories',
       //   href: '/'

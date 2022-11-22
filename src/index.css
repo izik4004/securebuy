@@ -28,7 +28,7 @@
     @apply text-lg lg:text-[22px] text-light mb-4 lg:mb-6 uppercase font-normal;
   }
   .lead {
-    @apply text-5xl font-bold;
+    @apply text-4xl font-bold;
   }
   .link {
     @apply text-lg text-dark;

@@ -40,7 +40,7 @@ const Header = () => {
         data-aos-delay='1200'>
           <Nav />
         </div>
-        <button className="btn btn-sm btn-outline hidden lg:flex"
+        <button className="btn btn-sm btn-outline hidden lg:flex px-10"
         data-aos='fade-down'
         data-aos-delay='1400'
         >
