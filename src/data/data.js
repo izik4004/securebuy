@@ -95,4 +95,22 @@ export const nav = [
     ],
   };
 
+  export const addedServices = [
+    { 
+    name: 'FREE SHIPPING', 
+    img:"",
+    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+   },
+   { 
+    name: '100% REFUND', 
+    img:"",
+    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+   },
+   { 
+    name: 'SUPPORT 24/7', 
+    img:"",
+    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+   },
+  ];
+
   

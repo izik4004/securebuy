@@ -1,4 +1,6 @@
+import AddedServices from "../components/AddedServices";
 import BestSeller from "../components/BestSeller";
+import Feature from "../components/Feature";
 import FlashDeals from "../components/FlashDeals";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -10,11 +12,10 @@ const Home = ({productItems}) => {
     <div>
       <Header />
       <Hero />
-      {/* <TopSellers/> */}
       <FlashDeals/>
       <BestSeller/>
-      {/* <FlashDeals productItems={productItems} /> */}
-      {/* <Product /> */}
+      <Feature/>
+      <AddedServices/>
     </div>
   );
 };

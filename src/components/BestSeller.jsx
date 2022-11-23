@@ -9,10 +9,12 @@ const BestSeller = () => {
         <div className='text-center lead'>
             <h3>Best Sellers</h3>
         </div>
+        <div className='flex mx-auto gap-10 cursor-pointer '>
         {items.map((item, index) => (
-            <div className='flex' >{item.title}</div>
+            <div className='hover:text-accent text-xl py-6 font-semibold'>{item.title}</div>
         ))}
-        <div className='flex gap-6 py-12'>
+        </div>
+        <div className='flex gap-6 py-6'>
         <Item 
         cards={cards}
         items={items}
