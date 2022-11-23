@@ -1,4 +1,4 @@
-import HeroImg from "../src/assets/svg/image.svg"
+import HeroImg from '../assets/svg/image.svg'
 
 export const header = {
     // logo: LogoImg,
@@ -65,7 +65,7 @@ export const nav = [
     ],
     items: [
       {
-        title: 'Fashion',
+        title: 'All',
         href: '/'
       },
       {

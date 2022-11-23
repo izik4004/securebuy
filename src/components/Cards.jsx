@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { product } from '../data';
+import { product } from '../data/data';
 import ArrowImg from '../assets/svg/arrow.svg'
 
 const Cards = () => {

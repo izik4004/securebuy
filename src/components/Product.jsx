@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
-import { product } from "../data";
+import { product } from "../data/data";
 import {BsArrowRight} from "react-icons/bs"
 
 const Product = () => {

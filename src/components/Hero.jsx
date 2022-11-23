@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { hero } from "../data";
+import { hero } from "../data/data";
 import { HiOutlineChevronDown } from "react-icons/hi";
 // import SellForm from "./SellForm";
 

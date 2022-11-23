@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { header } from "../data";
+import { header } from "../data/data";
 import { HiMenuAlt4} from "react-icons/hi";
 import {MdClose} from "react-icons/md"
 // import MobileNav from "../components/MobileNav";

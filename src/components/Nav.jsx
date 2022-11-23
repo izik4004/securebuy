@@ -1,5 +1,5 @@
 import React from 'react';
-import {nav} from "../data"
+import {nav} from "../data/data"
 
 
 const Nav = () => {
