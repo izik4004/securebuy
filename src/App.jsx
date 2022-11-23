@@ -1,15 +1,10 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Product from "./components/Product"
+import Home from "./pages/Home"
 
 function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <Hero/>
-      <Product/>
-      {/* <HeroSection/> */}
+     <Home/>
     </div>
   )
 }
