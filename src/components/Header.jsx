@@ -27,7 +27,7 @@ const Header = () => {
   transition-all z-10`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#"
+        <a href="/"
         data-aos='fade-down'
         data-aos-delay='1200'
         className="flex"

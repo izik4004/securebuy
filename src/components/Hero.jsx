@@ -9,17 +9,17 @@ const Hero = () => {
   return (
     <>
      
-      <div
+      {/* <div
         aria-hidden="true"
         class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
       >
         <div class="blur-[156px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
         <div class="blur-[156px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
-      </div>
+      </div> */}
 
-      <section className="items-center flex max-h-[800px] py-6 me ">
+      <section className="items-center flex max-h-[800px] py-6 me bg-primary">
         <div
-          className="mx-auto min-h-[800px] w-2/3
+          className="container mx-auto min-h-[800px] w-2/3
       flex justify-center items-center"
         >
           <div
@@ -50,7 +50,16 @@ const Hero = () => {
                 data-aos-delay="700"
               >
                 <button
-                  className="cursor-pointer btn btn-md lg:btn-lg
+                  className="cursor-pointer btn btn-md lg:btn-sm
+                  btn-accent flex justify-center items-center
+                  lg:gap-x-4"
+                  // onClick={() => setModalOpen(true)}
+                >
+                  {btnText}
+                  {/* <HiOutlineChevronDown /> */}
+                </button>
+                <button
+                  className="cursor-pointer btn btn-md lg:btn-sm
                   btn-accent flex justify-center items-center
                   lg:gap-x-4"
                   // onClick={() => setModalOpen(true)}

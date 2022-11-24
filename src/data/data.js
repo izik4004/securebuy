@@ -10,7 +10,7 @@ export const header = {
 
 export const nav = [
     { name: 'Home', href: '/' },
-    { name: 'Products', href: '/' },
+    { name: 'Products', href: '/products' },
     { name: 'About', href: '/' },
     // { name: 'Feedback', href: '/' },
   ];

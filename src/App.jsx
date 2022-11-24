@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Data from "./data/data2"
 import Sdata from "./data/Sdata"
 import Index from "./pages/Index"
+import Product from "./components/Product"
+import Shop from "./pages/Shop"
+import Header from "./components/Header"
 // import Home from "./pages/Home"
 
 function App() {
@@ -16,10 +19,11 @@ function App() {
     // </div>
     <>
     <Router>
-      {/* <Header  /> */}
+      <Header/>
       <Routes>
         {/* <Route path='/' element={<Home productItems={productItems}  />} /> */}
         <Route path='/' element={<Index productItems={productItems}  />} />
+        <Route path='products' element={<Shop  />} />
      
         {/* <Route path='/cart' exact> */}
           {/* <Cart CartItem={CartItem}  /> */}

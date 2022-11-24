@@ -6,13 +6,13 @@ const FeaturedProduct = () => {
   return (
     <section>
       <div className="mx-auto container py-6">
-        <h2 className="lead font-bold py-6 text-center">Featured Products</h2>
+        <h2 className="text-2xl font-bold py-6 text-center">Featured Products</h2>
         <div className="flex flex-row flex-wrap">
           {cards.map((card) => (
-            <div className="w-1/3 p-2 mx-auto ">
+            <div className="w-1/4 p-2 mx-auto">
               <div className="">
-                <div className="">
-                  <a href="#" className="relative block border border-gray-100">
+                <div className=" hover:border-accent border rounded-lg">
+                  <a href="#" className="relative block">
                     <button
                       type="button"
                       className="absolute right-4 top-4 rounded-full bg-black p-2 text-white"
@@ -45,23 +45,20 @@ const FeaturedProduct = () => {
                         New
                       </span> */}
 
-                      <h3 className="mt-4 text-lg font-bold">{card.title}</h3>
-
-                      <p className="mt-2 text-sm font-medium text-gray-600">
+                      <h3 className=" text-lg font-semibold">{card.title}</h3>
+                      <div className="flex justify-between items-center py-4">
+                      <p className="text-sm font-bold text-gray-600">
                         $14.99
                       </p>
 
                       <button
                         type="button"
-                        className="mt-4 flex w-full items-center justify-center rounded-lg bg-yellow-500 px-8 py-4"
+                        className="flex  items-center justify-center rounded-lg border border-accent px-2 py-2 hover:bg-accent hover:text-white"
                       >
-                        <span className="text-sm font-medium">
-                          {" "}
-                          Add to Cart{" "}
-                        </span>
+                       
 
                         <svg
-                          className="ml-1.5 h-5 w-5"
+                          className="h-5 w-5"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -75,13 +72,18 @@ const FeaturedProduct = () => {
                           />
                         </svg>
                       </button>
+                      </div>
                     </div>
                   </a>
                 </div>
+               
               </div>
             </div>
           ))}
         </div>
+        {/* <div className="flex-row items-center"> */}
+        <p className="text-md cursor-pointer text-center">View more products</p>
+        {/* </div> */}
       </div>
     </section>
   );
