@@ -22,10 +22,7 @@ const Index = ({addToCart, productItems, CartItem}) => {
         {/* <Hero1/> */}
         <Hero/>
         <Section1/>
-        {/* <Full/> */}
-        {/* <NewHero/> */}
        <HowItWorks/>
-        
         <FeaturedProduct addToCart={addToCart} productItems={productItems}/>
         {/* <Cta1/> */}
         <Feature/>
