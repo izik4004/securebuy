@@ -50,12 +50,12 @@ export const nav = [
         btnText: 'Explore',
         delay: 200,
       },
-      // {
-      //   // icon: CardIconImg1,
-      //   title: 'Fashion',
-      //   btnText: 'Explore',
-      //   delay: 200,
-      // },
+      {
+        // icon: CardIconImg1,
+        title: 'Fashion',
+        btnText: 'Explore',
+        delay: 200,
+      },
       // {
       //   // icon: CardIconImg1,
       //   title: 'Electronics',
