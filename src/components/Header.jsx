@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 // import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 import { BsCart2 } from "react-icons/bs";
-// import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = ({ CartItem }) => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -26,7 +26,7 @@ const Header = ({ CartItem }) => {
       } py-6 lg:py-4 fixed w-full
   transition-all z-10`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="px-20 mx-auto flex justify-between items-center">
         <a href="/" data-aos="fade-down" data-aos-delay="1200" className="flex">
           <h1 className="logotext  text-[#6420FE]">
             Secure<span className="logotext text-accent">Buy</span>
@@ -51,13 +51,14 @@ const Header = ({ CartItem }) => {
               <></>
             )}
           </div>
-          <button
+          <ConnectButton/>
+          {/* <button
             className="btn btn-sm btn-outline hidden lg:flex px-10"
             data-aos="fade-down"
             data-aos-delay="1400"
           >
             {btnText}
-          </button>
+          </button> */}
           <button
             className="lg:hidden"
             onClick={() => setMobileNav(!mobileNav)}
