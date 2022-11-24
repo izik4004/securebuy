@@ -6,7 +6,7 @@ const FeaturedProduct = () => {
   return (
     <section>
       <div className="mx-auto container py-6">
-        <h2 className="lead font-bold py-6">Featured Products</h2>
+        <h2 className="lead font-bold py-6 text-center">Featured Products</h2>
         <div className="flex flex-row flex-wrap">
           {cards.map((card) => (
             <div className="w-1/3 p-2 mx-auto ">

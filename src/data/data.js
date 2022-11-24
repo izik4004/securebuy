@@ -1,4 +1,7 @@
 import HeroImg from '../assets/svg/image.svg'
+import Shipping from '../assets/svg/shipping.png'
+import Support from '../assets/svg/support.png'
+import Refund from '../assets/svg/refund.png'
 
 export const header = {
     // logo: LogoImg,
@@ -98,18 +101,18 @@ export const nav = [
   export const addedServices = [
     { 
     name: 'FREE SHIPPING', 
-    img:"",
-    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    img: Shipping,
+    subtitle: 'Lorem Ipsum is simply dummy text '
    },
    { 
     name: '100% REFUND', 
-    img:"",
-    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    img: Refund,
+    subtitle: 'Lorem Ipsum is simply dummy text '
    },
    { 
     name: 'SUPPORT 24/7', 
-    img:"",
-    subtitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    img: Support,
+    subtitle: 'Lorem Ipsum is simply dummy text '
    },
   ];
 

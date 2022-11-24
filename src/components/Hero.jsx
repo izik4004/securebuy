@@ -19,7 +19,7 @@ const Hero = () => {
 
       <section className="items-center flex max-h-[800px] py-6 me ">
         <div
-          className="container mx-auto min-h-[800px] w-2/3
+          className="mx-auto min-h-[800px] w-2/3
       flex justify-center items-center"
         >
           <div
