@@ -2,6 +2,7 @@ import HeroImg from '../assets/svg/image.svg'
 import Shipping from '../assets/svg/shipping.png'
 import Support from '../assets/svg/support.png'
 import Refund from '../assets/svg/refund.png'
+import Image from '../assets/svg/img1.jpg'
 
 export const header = {
     // logo: LogoImg,
@@ -16,12 +17,12 @@ export const nav = [
   ];
 
   export const hero = {
-    title: 'Tired of getting scammed?',
-    subtitle: 'Helps you to organize your income and expenses',
+    title: 'ARE YOU AFRAID OF GETTING SCAMMED BY ONLINE VENDORS?',
+    subtitle: 'Shop securely and never worry about loosing youR money',
     subtitles: '',
     btnText: 'Shop Now',
     compText: '— Web, iOS and Android',
-    image: HeroImg,
+    image: Image,
   };
 
   export const product = {
@@ -113,6 +114,21 @@ export const nav = [
     name: 'SUPPORT 24/7', 
     img: Support,
     subtitle: 'Lorem Ipsum is simply dummy text '
+   },
+  ];
+
+  export const Steps = [
+    { 
+    name: 'Connect your Wallet', 
+    subtitle: 'Lorem Ipsum is simply dummy text '
+   },
+   { 
+    name: 'Purchase', 
+    subtitle: 'Add a product to your cart and make payment, payment goes to the escrow account'
+   },
+   { 
+    name: 'Confirm Delivery', 
+    subtitle: 'Once delivery is confirmed payment get disbursed to seller and keeps you at risk of loosing money'
    },
   ];
 

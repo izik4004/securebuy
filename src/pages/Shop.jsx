@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Shop = () => {
+const Shop = ({addToCart}) => {
   return (
 <section className=''>
-  <div class="mx-auto  max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:items-start">
-      <div class="lg:sticky">
+  <div class="mx-auto  max-w-screen-xl px-4 pt-[200px] sm:px-6 lg:px-8 min-h-[600px]">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:items-start min-h-[600px]">
+      <div class="lg:sticky ">
         <details open class="overflow-hidden rounded border border-gray-200">
           <summary
             class="flex items-center justify-between bg-gray-100 px-5 py-3 lg:hidden"

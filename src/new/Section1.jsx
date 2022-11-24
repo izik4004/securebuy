@@ -2,58 +2,84 @@ import React from 'react'
 
 const Section1 = () => {
   return (
-        <section>
-  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
-  <h2 className="text-2xl font-bold py-6 text-center">Categories</h2>
-    <div
-      class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:items-stretch"
-    >
-      <div class="flex items-center rounded bg-gray-100 p-8">
-        <div class="mx-auto text-center lg:text-left">
-          <h2 class="text-2xl font-bold">Watches</h2>
-
-          <p class="mt-4 max-w-[45ch] text-sm text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-            cupiditate mollitia saepe vitae libero nobis.
-          </p>
-
-          <a
-            href="#"
-            class="mt-6 inline-block rounded bg-black px-6 py-3 text-sm text-white"
-          >
-            View the Range
-          </a>
+    <div className=" bg-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl -mt-24 z-99">
+      <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="p-8 border">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">The quick fox</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-3 lg:py-12">
-        <a href="#" class="block">
-          <img
-            alt="Simple Watch"
-            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80"
-            class="aspect-square w-full rounded object-cover"
-          />         
-        </a>
-
-        <a href="#" class="block">
-          <img
-            alt="Simple Watch"
-            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80"
-            class="aspect-square w-full rounded object-cover"
-          />
-        </a>
-
-        <a href="#" class="block">
-          <img
-            alt="Simple Watch"
-            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80"
-            class="aspect-square w-full rounded object-cover"
-          />
-        </a>
+        <div className="p-8 border">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Leverage agile</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Storage shed, troughs feed bale manure, is garden wheat oats at
+              augers. Bulls at rose garden cucumbers mice sunflower wheat in
+              pig.
+            </p>
+          </div>
+        </div>
+        <div className="p-8 border">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
+            </p>
+          </div>
+        </div>
+      
       </div>
     </div>
-  </div>
-</section>
   )
 }
 

@@ -2,73 +2,85 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>
-        
-
-        <div class=" bg-primary relative overflow-hidden ">
-    <header class="h-24 sm:h-32 flex items-center z-30 w-full">
-        <div class="container mx-auto px-6 flex items-center justify-between">
-            <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
-                <svg aria-hidden="true" focusable="false" width="100" height="100" viewBox="0 0 512 309">
-                    <path d="M120.81 80.561h96.568v7.676h-87.716v57.767h82.486v7.675h-82.486v63.423h88.722v7.675H120.81V80.561zm105.22 0h10.26l45.467 63.423L328.23 80.56L391.441 0l-103.85 150.65l53.515 74.127h-10.663l-48.686-67.462l-48.888 67.462h-10.461l53.917-74.128l-50.296-70.088zm118.898 7.676V80.56h110.048v7.676h-50.699v136.54h-8.852V88.237h-50.497zM0 80.56h11.065l152.58 228.323l-63.053-84.107L9.254 91.468l-.402 133.31H0V80.56zm454.084 134.224c-1.809 0-3.165-1.4-3.165-3.212c0-1.81 1.356-3.212 3.165-3.212c1.83 0 3.165 1.401 3.165 3.212c0 1.811-1.335 3.212-3.165 3.212zm8.698-8.45h4.737c.064 2.565 1.937 4.29 4.693 4.29c3.079 0 4.823-1.854 4.823-5.325v-21.99h4.823v22.011c0 6.252-3.617 9.853-9.603 9.853c-5.62 0-9.473-3.493-9.473-8.84zm25.384-.28h4.78c.409 2.953 3.294 4.828 7.45 4.828c3.875 0 6.717-2.005 6.717-4.764c0-2.371-1.809-3.794-5.921-4.764l-4.005-.97c-5.62-1.316-8.181-4.032-8.181-8.602c0-5.54 4.521-9.227 11.303-9.227c6.308 0 10.916 3.686 11.196 8.925h-4.694c-.452-2.867-2.95-4.657-6.567-4.657c-3.81 0-6.35 1.833-6.35 4.635c0 2.22 1.635 3.493 5.683 4.441l3.423.841c6.373 1.488 9 4.075 9 8.753c0 5.95-4.607 9.68-11.97 9.68c-6.89 0-11.52-3.558-11.864-9.12z" fill="#000">
-                    </path>
+    <section className="mx-auto container py-6 max-h-[800px]  top-[60px]">
+    <div className="relative flex flex-col-reverse max-h-[800px] py-16 lg:py-0 lg:flex-col">
+    <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
+      <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
+        <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center">
+          The quick, brown fox
+          <br className="hidden md:block" />
+          jumps over a lazy dog
+        </h2>
+        <p className="mb-5 text-base text-gray-700 md:text-lg md:text-center">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+          quae. explicabo.
+        </p>
+        <div className="mb-10 text-center md:mb-16 lg:mb-20">
+          <a
+            href="/"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+          >
+            Learn more
+          </a>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="mb-2 text-sm text-gray-600 md:mb-2">Follow us</div>
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center">
+              <a
+                href="/"
+                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+                  <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
                 </svg>
+              </a>
             </div>
-            <div class="flex items-center">
-                <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                    <a href="#" class="py-2 px-6 flex text-indigo-500 border-b-2 border-indigo-500">
-                        Home
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
-                        Watch
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
-                        Product
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
-                        Contact
-                    </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
-                        Carrer
-                    </a>
-                </nav>
-                <button class="lg:hidden flex flex-col ml-4">
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
-                    </span>
-                </button>
+            <div className="flex items-center">
+              <a
+                href="/"
+                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >
+                <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
+                  <circle cx="15" cy="15" r="4" />
+                  <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
+                </svg>
+              </a>
             </div>
+            <div className="flex items-center">
+              <a
+                href="/"
+                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+                  <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
+                </svg>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <a
+                href="/"
+                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-6">
+                  <path d="M23.8,7.2c0,0-0.2-1.7-1-2.4c-0.9-1-1.9-1-2.4-1C17,3.6,12,3.6,12,3.6h0c0,0-5,0-8.4,0.2 c-0.5,0.1-1.5,0.1-2.4,1c-0.7,0.7-1,2.4-1,2.4S0,9.1,0,11.1v1.8c0,1.9,0.2,3.9,0.2,3.9s0.2,1.7,1,2.4c0.9,1,2.1,0.9,2.6,1 c1.9,0.2,8.2,0.2,8.2,0.2s5,0,8.4-0.3c0.5-0.1,1.5-0.1,2.4-1c0.7-0.7,1-2.4,1-2.4s0.2-1.9,0.2-3.9v-1.8C24,9.1,23.8,7.2,23.8,7.2z M9.5,15.1l0-6.7l6.5,3.4L9.5,15.1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-    </header>
-    <div class="flex relative z-20 items-center">
-        <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-8">
-            <div class="flex flex-col">
-                <h1 class="font-light w-full uppercase text-center text-4xl sm:text-5xl dark:text-white text-gray-800">
-                    The React Framework for Production
-                </h1>
-                <h2 class="font-light max-w-2xl mx-auto w-full text-xl dark:text-white text-gray-500 text-center py-8">
-                    Next.js gives you the best developer experience with all the features you need for production: hybrid static &amp; server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
-                </h2>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="uppercase py-2 px-4 bg-gray-800 border-2 border-transparent text-white text-md mr-4 hover:bg-gray-900">
-                        Get started
-                    </a>
-                    <a href="#" class="uppercase py-2 px-4 bg-transparent border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md">
-                        Documentation
-                    </a>
-                </div>
-            </div>
-            <div class="block w-full mx-auto mt-6 md:mt-0 relative">
-                <img src="/images/object/12.svg" class="max-w-xs md:max-w-2xl m-auto"/>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
-
-   </div>
+    <div className="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
+      <img
+        className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+        src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+        alt=""
+      />
+    </div>
+  </div>
+  </section>
   )
 }
 

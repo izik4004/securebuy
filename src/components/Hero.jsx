@@ -19,24 +19,25 @@ const Hero = () => {
 
       <section className="items-center flex max-h-[800px] py-6 me bg-primary">
         <div
-          className="container mx-auto min-h-[800px] w-2/3
+          className="mx-auto min-h-[600px] w-2/3
       flex justify-center items-center"
         >
           <div
             className="flex flex-col lg:gap-x-[30]px gap-y-8
         lg:flex-row items-center justify-center
-        text-center lg:text-left"
+        lg:text-left"
           >
-            <div className="flex-1 ">
+            <div className="flex-1 items-center flex flex-col">
               <h1
-                className="title mb-2 lg:mb-5 "
+                className="text-5xl italic font-bold mb-2 lg:mb-5 text-center"
                 data-aos="fade-in"
                 data-aos-delay="500"
               >
-                {title}
+                AFRAID OF GETTING <span className="text-[#6420FE]">SCAMMED </span> BY ONLINE VENDORS?
+                {/* {title} */}
               </h1>
               <p
-                className="lead mb-5 lg:mb-10 text-center"
+                className="text-md mb-5 lg:mb-10 text-center"
                 data-aos="fade-in"
                 data-aos-delay="500"
               >
@@ -44,7 +45,7 @@ const Hero = () => {
               </p>
 
               <div
-                className="flex items-center max-w-sm
+                className="flex items-center max-w-sm 
                lg:max-w-full mx-auto lg:mx-0 gap-x-2 lg:gap-x-6 cursor-pointer"
                 data-aos="fade-in"
                 data-aos-delay="700"
@@ -58,15 +59,7 @@ const Hero = () => {
                   {btnText}
                   {/* <HiOutlineChevronDown /> */}
                 </button>
-                <button
-                  className="cursor-pointer btn btn-md lg:btn-sm
-                  btn-accent flex justify-center items-center
-                  lg:gap-x-4"
-                  // onClick={() => setModalOpen(true)}
-                >
-                  {btnText}
-                  {/* <HiOutlineChevronDown /> */}
-                </button>
+                
               </div>
             </div>
             <div className="flex-1 w-1/3" data-aos="fade-down" data-aos-delay="800">

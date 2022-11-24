@@ -25,10 +25,10 @@ module.exports = {
         grey: '#F5F5F5',
         primary: '#E7E9F8'
       },
-      // backgroundImage: {
-      //   overview: "url('/src/assets/img/overview/bg.svg')",
-      //   cta: "url('/src/assets/img/cta/bg.svg')",
-      // },
+      backgroundImage: {
+        overview: "url('/src/assets/svg/img3.jpg')",
+        // cta: "url('/src/assets/img/cta/bg.svg')",
+      },
     },
   },
   plugins: [],
