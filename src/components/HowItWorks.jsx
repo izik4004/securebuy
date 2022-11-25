@@ -44,7 +44,7 @@ const HowItWorks = () => {
                       height="24"
                     />
                   </svg>
-                  <span className="relative"> Easy steps to <span className='text-[#6420FE]'>Shop</span> without losing money</span>
+                  <span className="relative "> Easy steps to <span className='text-[#6420FE]'>Shop</span> without losing money</span>
                 </span>{' '}
               
               </h2>

@@ -60,7 +60,7 @@ console.log("CartItem", CartItem)
     // </div>
     <>
     <Router>
-      <Header/>
+    <Header CartItem={CartItem}/>
       <Routes>
         {/* <Route path='/' element={<Home productItems={productItems}  />} /> */}
         <Route path='/' element={<Index productItems={productItems} addToCart={addToCart} CartItem={CartItem}/>} />

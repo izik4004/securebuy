@@ -21,12 +21,13 @@ const Header = ({ CartItem }) => {
 
   return (
     <header
+    // className="sticky top-0 bg-white shadow-lg z-10"
       className={`${
         isActive ? "lg:top-0 bg-white shadow-2xl" : "lg;top-[60px]"
-      } py-6 lg:py-4 fixed w-full
+      } py-6 lg:py-6 fixed w-full bg-white
   transition-all z-10`}
     >
-      <div className="px-20 mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center ">
         <a href="/" data-aos="fade-down" data-aos-delay="1200" className="flex">
           <h1 className="logotext  text-[#6420FE]">
             Secure<span className="logotext text-accent">Buy</span>

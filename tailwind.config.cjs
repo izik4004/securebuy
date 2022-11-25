@@ -23,7 +23,8 @@ module.exports = {
         accent: '#FF7235',
         accentHover: '#e05216',
         grey: '#F5F5F5',
-        primary: '#E7E9F8'
+        primary: '#F2F2F2',
+        secondary: '#333CC1'
       },
       backgroundImage: {
         overview: "url('/src/assets/svg/img3.jpg')",

@@ -10,7 +10,9 @@
     font-family: 'Poppins', sans-serif;
   }
 
- 
+ .container {
+  min-width: 900px
+ }
 
 
   body {

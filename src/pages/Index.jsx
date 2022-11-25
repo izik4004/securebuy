@@ -13,15 +13,18 @@ import Hero1 from '../components/Hero1'
 import Cta1 from '../new/Cta1'
 // import Full from '../components/Full'
 import NewHero from '../components/NewHero'
+import Deals from '../components/Deals'
 
 const Index = ({addToCart, productItems, CartItem}) => {
   return (
     <div>
-        {/* <Hero/> */}
-        <Header CartItem={CartItem}/>
-        {/* <Hero1/> */}
+        <div className='bg-[#F6F7F9]'>
         <Hero/>
+     
+        
+        </div>
         <Section1/>
+        <Deals/>
        <HowItWorks/>
         <FeaturedProduct addToCart={addToCart} productItems={productItems}/>
         {/* <Cta1/> */}
