@@ -4,7 +4,7 @@ import Image from "../assets/svg/shoe1.png"
 const Deals = () => {
   return (
    <section className='container mx-auto' >
-    <h3 className='text-center py-8 lead'>Top Deals</h3>
+    <h3 className='text-center py-8 text-2xl font-semibold'>Top Deals</h3>
     <div className='flex mx-auto gap-6'>
         <div className='flex w-1/2 border  rounded-xl px-10 py-8 bg-accent'>
         <div className='flex items-center flex-col py-6'>

@@ -4,6 +4,16 @@ import Support from '../assets/svg/support.png'
 import Refund from '../assets/svg/refund.png'
 import Image from '../assets/svg/img1.jpg'
 
+// category images
+import Shoes from "../assets/svg/6.jpg"
+import Fridge from "../assets/category/fridge.jpg"
+import Accessories from "../assets/category/accessories.jpg"
+import Phone from "../assets/category/phone.jpg"
+import Shirt from "../assets/category/shirt.jpg"
+import Stationery from "../assets/category/stationery.jpg"
+
+
+
 export const header = {
     // logo: LogoImg,
     btnText: 'Connect',
@@ -132,4 +142,30 @@ export const nav = [
    },
   ];
 
+  export const category = [
+    { 
+    name: 'Shoes', 
+    img: Shoes,
+   },
+   { 
+    name: 'Shirt', 
+    img: Shirt,
+   },
+   { 
+    name: 'Phone', 
+    img: Phone,
+   },
+   { 
+    name: 'Stationery', 
+    img: Stationery,
+   },
+   { 
+    name: 'Fridge', 
+    img: Fridge,
+   },
+   { 
+    name: 'Accessories', 
+    img: Accessories,
+   },
+  ];
   
