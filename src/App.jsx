@@ -1,10 +1,10 @@
 import {useState} from "react"
-import Home from "./pages/Home"
+// import Home from "./pages/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Data from "./data/data2"
-import Sdata from "./data/Sdata"
+import {Data} from "./data/data"
+// import Sdata from "./data/Sdata"
 import Index from "./pages/Index"
-import Product from "./components/Product"
+// import Product from "./components/Product"
 import Shop from "./pages/Shop"
 import Header from "./components/Header"
 // import Home from "./pages/Home"
@@ -53,26 +53,15 @@ function App() {
     }
   }
 
-console.log("CartItem", CartItem)
+
   return (
-    // <div className="App">
-    //  <Home/>
-    // </div>
-    <>
     <Router>
     <Header CartItem={CartItem}/>
       <Routes>
-        {/* <Route path='/' element={<Home productItems={productItems}  />} /> */}
-        <Route path='/' element={<Index productItems={productItems} addToCart={addToCart} CartItem={CartItem}/>} />
-        <Route path='products' element={<Shop  />} />
-     
-        {/* <Route path='/cart' exact> */}
-          {/* <Cart CartItem={CartItem}  /> */}
-        {/* </Route> */}
+        <Route exact path='/'  element={<Index productItems={productItems} addToCart={addToCart} CartItem={CartItem}/>} />
+        <Route path='/products' element={<Shop  />} />
       </Routes>
-      {/* <Footer /> */}
     </Router>
-  </>
   )
 }
 

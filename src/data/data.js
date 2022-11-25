@@ -1,11 +1,11 @@
-import HeroImg from '../assets/svg/image.svg'
-import Shipping from '../assets/svg/shipping.png'
-import Support from '../assets/svg/support.png'
-import Refund from '../assets/svg/refund.png'
-import Image from '../assets/svg/img1.jpg'
+// import HeroImg from '../assets/svg/image.svg'
+import Shipping from '../assets/category/shipping.png'
+import Support from '../assets/category/support.png'
+import Refund from '../assets/category/refund.png'
+// import Image from '../assets/svg/img1.jpg'
 
 // category images
-import Shoes from "../assets/svg/6.jpg"
+import Shoes from "../assets/category/6.jpg"
 import Fridge from "../assets/category/fridge.jpg"
 import Accessories from "../assets/category/accessories.jpg"
 import Phone from "../assets/category/phone.jpg"
@@ -35,79 +35,7 @@ export const nav = [
     image: Image,
   };
 
-  export const product = {
-    title: 'Explore by Category',
-    subtitle:
-      'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.',
-    cards: [
-      {
-        // icon: CardIconImg1,
-        title: 'Bedroom',
-        btnText: 'Explore',
-        delay: 200,
-      },
-      {
-        // icon: CardIconImg1,
-        title: 'Gaming',
-        btnText: 'Explore',
-        delay: 200,
-      },
-      {
-        // icon: CardIconImg1,
-        title: 'Health',
-        btnText: 'Explore',
-        delay: 200,
-      },
-      {
-        // icon: CardIconImg1,
-        title: 'Phone & Laptops',
-        btnText: 'Explore',
-        delay: 200,
-      },
-      {
-        // icon: CardIconImg1,
-        title: 'Fashion',
-        btnText: 'Explore',
-        delay: 200,
-      },
-      // {
-      //   // icon: CardIconImg1,
-      //   title: 'Electronics',
-      //   btnText: 'Explore',
-      //   delay: 200,
-      // },
-    ],
-    items: [
-      {
-        title: 'All',
-        href: '/'
-      },
-      {
-        title: 'Electronics',
-        href: '/'
-      },
-      {
-        title: 'Home & Office',
-        href: '/'
-      },
-      {
-        title: 'Phones & Laptop',
-        href: '/'
-      },
-      // {
-      //   title: 'Gaming',
-      //   href: '/'
-      // },
-      // {
-      //   title: 'Health & Beauty',
-      //   href: '/'
-      // },
-      // {
-      //   title: 'Other categories',
-      //   href: '/'
-      // },
-    ],
-  };
+
 
   export const addedServices = [
     { 
@@ -168,4 +96,53 @@ export const nav = [
     img: Accessories,
    },
   ];
+
+  export const Data = {
+    productItems: [
+      {
+        id: 1,
+        discount: 50,
+        cover: '../images/flash/flash-1.png',
+        name: "Shoes",
+        price: 100,
+      },
+      {
+        id: 2,
+        discount: 40,
+        cover: "../../public/images/flash/flash-2.png",
+        name: "Watch",
+        price: 20,
+      },
+      {
+        id: 3,
+        discount: 40,
+        cover: "../../public/images/flash/flash-3.png",
+        name: "Smart Mobile Black",
+        price: 200,
+      },
+      {
+        id: 4,
+        discount: 40,
+        cover: "../../public/images/flash/flash-4.png",
+        name: "Smart Watch Black",
+        price: 50,
+      },
+      {
+        id: 5,
+        discount: 50,
+        cover: "../../public/images/flash/flash-1.png",
+        name: "Shoes",
+        price: 100,
+      },
+      {
+        id: 6,
+        discount: 50,
+        cover: "../../public/images/flash/flash-3.png",
+        name: "Shoes",
+        price: 100,
+      },
+    ],
+  }
+
+  
   

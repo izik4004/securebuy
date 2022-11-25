@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "../assets/svg/shoe1.png"
+import Image from "../assets/category/shoe1.png"
 
 const Deals = () => {
   return (
@@ -12,7 +12,7 @@ const Deals = () => {
             <button className='px-6  py-2 rounded-xl bg-white text-accent'>Shop Now </button>
             </div>
             <div>
-                <img src={Image} alt="" srcset="" className='w-54' />
+                <img src={Image} alt="" className='w-54' />
             </div>
         </div>
         <div className='flex w-1/2 border  rounded-xl px-10 py-8 bg-primary'>
@@ -21,7 +21,7 @@ const Deals = () => {
             <button className='px-6  py-2 rounded-xl bg-white text-accent'>Shop Now </button>
             </div>
             <div>
-                <img src={Image} alt="" srcset="" className='w-54' />
+                <img src={Image} alt="" className='w-54' />
             </div>
         </div>
         </div>
