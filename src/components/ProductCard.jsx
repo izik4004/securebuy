@@ -7,10 +7,10 @@ const ProductCard = ({ productItems, addToCart }) => {
     }
   return (
     
-    <div className="flex flex-row mx-auto flex-wrap">
+    <div className="md:container flex flex-row mx-auto flex-wrap">
       {productItems.map((card, index) => {
         return (
-        <div key={index} className="w-1/4 p-2"> 
+        <div key={index} className="lg:w-1/4 p-2 lg:p-2 w-1/2 md:1/2"> 
           <div className=" hover:border-accent border rounded-lg">
             <a href="#" className="relative block">
               <button

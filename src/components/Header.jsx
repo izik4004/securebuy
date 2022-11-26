@@ -53,27 +53,21 @@ const Header = ({ CartItem }) => {
           </div>
 
           <div className="flex items-center gap-4">
+           
+            <ConnectButton />
             <div
              
-              className="border border-red-500 rounded-full p-2 cursor-pointer"
-            >
-              <BsCart2  onClick={() => setCartOpen(true)}/>
-              {CartItem?.length > "0" ? (
-                <span className="bg-red-500 text-center text-xs absolute ml-3 top-3 rounded-full px-2 py-1 text-white">
-                  {CartItem?.length}
-                </span>
-              ) : (
-                <></>
-              )}
-            </div>
-            <ConnectButton />
-            {/* <button
-            className="btn btn-sm btn-outline hidden lg:flex px-10"
-            data-aos="fade-down"
-            data-aos-delay="1400"
-          >
-            {btnText}
-          </button> */}
+             className=" cursor-pointer"
+           >
+             <BsCart2  onClick={() => setCartOpen(true)}/>
+             {CartItem?.length > "0" ? (
+               <span className="bg-red-500 text-center text-xs absolute ml-3 top-3 rounded-full px-2 py-1 text-white">
+                 {CartItem?.length}
+               </span>
+             ) : (
+               <></>
+             )}
+           </div>
             <button
               className="lg:hidden"
               onClick={() => setMobileNav(!mobileNav)}

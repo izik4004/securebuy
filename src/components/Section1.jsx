@@ -3,9 +3,9 @@ import {category} from "../data/data"
 
 const Section1 = () => {
   return (
-    <div className=" container  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl py-6 z-99">
-      <h3 className='py-6 text-2xl font-semibold'>Browse by category</h3>
-     <div className='flex gap-6'>
+    <div className=" container  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  z-99">
+      <h3 className=' text-2xl font-semibold'>Browse by category</h3>
+     <div className='flex gap-6 py-6 '>
       {category.map((item, index) => (
         <div key={index} className=" border py-10 px-2 rounded-xl bg-white hover:text-white w-1/6 hover:bg-secondary cursor-pointer">
           <div className=" text-center ">

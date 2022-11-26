@@ -10,7 +10,7 @@ import Deals from "../components/Deals";
 const Index = ({ addToCart, productItems, CartItem }) => {
   return (
     <div>
-      <div className="bg-[#F6F7F9]">
+      <div className="">
         <Hero />
       </div>
       <Section1 />
