@@ -7,6 +7,7 @@ import Index from "./pages/Index"
 // import Product from "./components/Product"
 import Shop from "./pages/Shop"
 import Header from "./components/Header"
+import ProductDetails from "./pages/ProductDetails"
 // import Home from "./pages/Home"
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       <Routes>
         <Route exact path='/'  element={<Index productItems={productItems} addToCart={addToCart} CartItem={CartItem}/>} />
         <Route path='/products' element={<Shop  />} />
+        <Route path='/products/:id' element={<ProductDetails  />} />
       </Routes>
     </Router>
   )

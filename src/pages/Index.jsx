@@ -13,7 +13,7 @@ const Index = ({ addToCart, productItems, CartItem }) => {
       <div className="">
         <Hero />
       </div>
-      <Section1 />
+      {/* <Section1 /> */}
       <Deals />
       <HowItWorks />
       <FeaturedProduct addToCart={addToCart} productItems={productItems} />

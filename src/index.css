@@ -31,7 +31,7 @@
     @apply text-4xl lg:text-8xl mb-6 font-bold;
   }
   .logotext {
-   @apply text-4xl
+   @apply lg:text-3xl 
   }
   .h2 {
     @apply text-5xl lg:text-7xl font-bold;

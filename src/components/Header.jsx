@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { header } from "../data/data";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
@@ -7,6 +7,7 @@ import Nav from "../components/Nav";
 import { BsCart2 } from "react-icons/bs";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Cart from "./Cart";
+import useClickOutside from "../hooks/useClickOutside";
 
 const Header = ({ CartItem }) => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -21,19 +22,29 @@ const Header = ({ CartItem }) => {
     });
   });
 
+  const handleClick = () => {
+    if(cartOpen === false)
+    setCartOpen(true)
+    else setCartOpen(false)
+  }
+  // const ref = useRef(null);
+  // useClickOutside(ref, () => {
+  //   if (cartOpen) {
+  //     setCartOpen(!cartOpen);
+  //   }
+  // });
+
   return (
     <>
-      {cartOpen === true ? 
-      <Cart cartOpen={cartOpen} setCartOpen={setCartOpen}/> 
-      : <></>}
+      {cartOpen && <Cart cartOpen={cartOpen} setCartOpen={setCartOpen} />}
       <header
-        // className="sticky top-0 bg-white shadow-lg z-10"
+        // className="sticky top-0 bg-white shadow-md z-10 py-4"
         className={`${
-          isActive ? "lg:top-0 bg-white shadow-2xl" : "lg;top-[60px]"
-        } py-6 lg:py-6 fixed w-full bg-white
+          isActive ? "lg:top-0 bg-white shadow-2xl" : "lg;top-[60px] "
+        }  py-4 fixed w-full bg-white
   transition-all z-10`}
       >
-        <div className="container mx-auto flex justify-between items-center ">
+        <div className=" lg:mx-20 flex px-2 lg:px-0 justify-between items-center ">
           <a
             href="/"
             data-aos="fade-down"
@@ -53,21 +64,21 @@ const Header = ({ CartItem }) => {
           </div>
 
           <div className="flex items-center gap-4">
-           
             <ConnectButton />
             <div
-             
-             className=" cursor-pointer"
-           >
-             <BsCart2  onClick={() => setCartOpen(true)}/>
-             {CartItem?.length > "0" ? (
-               <span className="bg-red-500 text-center text-xs absolute ml-3 top-3 rounded-full px-2 py-1 text-white">
-                 {CartItem?.length}
-               </span>
-             ) : (
-               <></>
-             )}
-           </div>
+              className=" cursor-pointer bg-gray-100 p-2 rounded-full"
+              // ref={ref}
+              onClick={handleClick}
+            >
+              <BsCart2 />
+              {CartItem?.length > "0" ? (
+                <span className="bg-red-500 text-center text-xs absolute ml-3 top-3 rounded-full px-2 py-1  text-white">
+                  {CartItem?.length}
+                </span>
+              ) : (
+                <></>
+              )}
+            </div>
             <button
               className="lg:hidden"
               onClick={() => setMobileNav(!mobileNav)}
