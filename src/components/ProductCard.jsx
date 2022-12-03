@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
+import { useDispatch } from "react-redux";
 
 const ProductCard = ({ productItems, addToCart }) => {
   const navigate = useNavigate();
@@ -7,12 +9,21 @@ const ProductCard = ({ productItems, addToCart }) => {
   const increment = () => {
     setCount(count + 1);
   };
+
+  // const dispatch = useDispatch();
+
+  const onAddToCart = () => {
+    const item = { id, title, text, img, price };
+
+    dispatch(setAddItemToCart(item))
+  }
+
   return (
     <div className="md:container flex flex-row mx-auto flex-wrap">
       {productItems.map((card, index) => {
         return (
-          <div key={index} className="lg:w-1/4 p-2 lg:p-2 w-1/2 md:1/2">
-            <div className=" hover:border-accent border rounded-lg cursor-pointer"
+          <div key={index} className={`lg:w-1/4 p-2 lg:p-2 w-1/2 md:1/2 bg-gradient-to-b relative`}>
+            <div className=" hover:border-accent border rounded-lg cursor-pointer px-2"
             onClick={() => navigate(`/products/${card?.id}`)}
             >
              
@@ -39,14 +50,16 @@ const ProductCard = ({ productItems, addToCart }) => {
 
                 <img
                   alt="Toy"
-                  src="https://images.unsplash.com/photo-1603356033288-acfcb54801e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  className="h-56 w-full object-contain lg:h-60"
+                  src={card.img}
+                  className="h-56 w-full transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-contain lg:h-60"
                 />
 
                 <div className="px-6">
-                  <h3 className=" text-lg font-semibold">{card.name}</h3>
+                  <h3 className="whitespace-nowrap text-lg font-semibold text-orange-400">{card.title}</h3>
+                  <span className="text-sm font-semibold flex items-center gap-1.5"><FaStar /> {card.rating}</span>
                   <div className="flex justify-between items-center py-4">
-                    <p className="text-sm font-bold text-gray-600">$14.99</p>
+                    
+                    <p className="text-sm font-bold text-gray-600">${card.price}</p>
 
                     <button
                       type="button"
@@ -69,6 +82,9 @@ const ProductCard = ({ productItems, addToCart }) => {
                       </svg>
                     </button>
                   </div>
+                </div>
+                <div className="flex justify-center">
+                  <button type="button" className="font-bold flex  items-center justify-center rounded-lg bg-accent border text-white px-2 py-2 hover:border-accent hover:bg-white hover:text-black mb-2">{card.btn}</button>
                 </div>
              
             </div>

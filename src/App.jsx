@@ -1,24 +1,30 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 // import Home from "./pages/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import {Data} from "./data/data"
 // import Sdata from "./data/Sdata"
 import Index from "./pages/Index"
-// import Product from "./components/Product"
+// import product from "./data/data"
 import Shop from "./pages/Shop"
 import Header from "./components/Header"
 import ProductDetails from "./pages/ProductDetails"
+import toast from 'react-hot-toast';
 // import Home from "./pages/Home"
 
 function App() {
   const { productItems } = Data
+  
   // const { shopItems } = Sdata
-  const [CartItem, setCartItem] = useState([])
+  const [CartItem, setCartItem] = useState([]);
+  const [RetrieveItem, setRetrieveItem] = useState([])
 
   //Step 4 :
   const addToCart = (product) => {
+
+    
     // if hamro product alredy cart xa bhane  find garna help garxa
-    const productExit = CartItem.find((item) => item.id === product.id)
+    const productExit = CartItem.map((item) => item.id === product.id)
+    
     // if productExit chai alredy exit in cart then will run fun() => setCartItem
     // ani inside => setCartItem will run => map() ani yo map() chai each cart ma
     // gayara check garxa if item.id ra product.id chai match bhayo bhane
@@ -26,12 +32,27 @@ function App() {
     // ani increase  exits product QTY by 1
     // if item and product doesnt match then will add new items
     if (productExit) {
-      setCartItem(CartItem.map((item) => (item.id === product.id ? { ...productExit, qty: productExit.qty + 1 } : item)))
+      // const listItems = CartItem.map((item) => (item.id === productExit.id ? { ...productExit, qty: product.qty + 1 } : item))
+      // localStorage.setItem('cart', JSON.stringify(listItems));
+      toast.success(`Item QTY Increased`)
     } else {
       // but if the product doesnt exit in the cart that mean if card is empty
       // then new product is added in cart  and its qty is initalize to 1
-      setCartItem([...CartItem, { ...product, qty: 1 }])
+      const listItems = [...CartItem, { ...product, qty: 1 }]
+      localStorage.setItem('cart', JSON.stringify(listItems));
+      toast.success(`${product.title} added to cart`)
     }
+
+    // useEffect(() => {
+    //   const items = JSON.parse(localStorage.getItem('cart'))
+
+    //   if (items) {
+    //     setCartItem(items)
+    //   }
+    // }, [items])
+    
+
+
   }
 
   // Stpe: 6
@@ -53,7 +74,6 @@ function App() {
       setCartItem(CartItem.map((item) => (item.id === product.id ? { ...productExit, qty: productExit.qty - 1 } : item)))
     }
   }
-
 
   return (
     <Router>
