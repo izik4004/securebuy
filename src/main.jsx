@@ -8,6 +8,9 @@ import { publicProvider } from 'wagmi/providers/public';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import Store from "./app/Store";
+import { Toaster } from 'react-hot-toast';
+
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -31,7 +34,8 @@ const wagmiClient = createClient({
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider Store={Store} chains={chains}>
+      <Toaster position='top-center' reverseOrder={false} />
         <App />
       </RainbowKitProvider>
     </WagmiConfig>

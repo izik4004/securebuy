@@ -14,6 +14,18 @@
   min-width: 900px
  }
 
+ .bg-theme-cart {
+  @apply bg-gradient-to-b from-slate-900 to-gray-900 shadow-sm shadow-gray-900;
+  }
+
+  .transitions-theme {
+    @apply transition-all duration-700 ease-in-out cursor-pointer;
+  }
+
+ /* Blur-Effect */
+ .blur-effect-theme {
+  @apply bg-white/50 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-slate-100 transition-all duration-300;
+  }
 
   body {
     @apply font-primary text-lg;

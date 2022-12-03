@@ -36,6 +36,9 @@ $  npm run dev
 * github.com/olaoyesalem.com
 <br>  olaoyesalemgreat@gmail.com
 
+* github.com/jheff4
+<br>  ogbevoenetinosa@gmail.com
+
 ## Status
 This project is still under development
 

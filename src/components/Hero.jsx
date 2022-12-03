@@ -54,7 +54,7 @@ const Hero = () => {
                Shop Now
               </a>
             </div>
-            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex hover:scale-105 transition-transform">
               <img
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
                 alt="mockup"

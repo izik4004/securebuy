@@ -1,12 +1,19 @@
 import React from 'react'
+import CartCount from './cart/CartCount'
+import CartEmpty from './cart/CartEmpty'
+import CartItem from './cart/CartItem'
 
-const Cart = ({setCartOpen, cartOpen}) => {
+const Cart = ({ handleClick, cartOpen }) => {
   return (
-    <div 
-    className="absolute top-[100px] right-3 w-1/3 p-2 bg-red-500"
-    >Cart
-    <div>1</div>
-    </div>
+    <>
+      <div className={`fixed top-0 left-0 right-0 bottom-0 blur-effect-theme w-full h-screen opacity-100 z-[200]`}>
+        <div className={`blur-effect-theme h-screen max-w-xl w-full absolute right-0`}>
+          <CartCount handleClick={handleClick}/>
+          <CartEmpty handleClick={handleClick}/>
+          <CartItem />
+        </div>
+      </div>
+    </>
   )
 }
 
